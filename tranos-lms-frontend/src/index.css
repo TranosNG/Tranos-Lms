@@ -1,5 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins&family=Raleway&display=swap');
+
+:root{
+  --primary_bg_color: #ffffff;
+  --primary_blue_color: #172673;
+  --primary_text_color: #000000;
+  --blue_bg_color: #EDEFF6;
+  --link_hover_bg_color:#BEC2D8;
+  --input_color: #898888;
+  --clr-jet: gray;
+  --clr-pumpkin: #172673;
+  --percent: 100;
+}
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.burger{
+display: block;
+}
+.mobile_side_bar_container{
+  /* background-color: var(--primary_blue_color); */
+  background-color: var(--primary_bg_color);
+  /* color:var(--primary_bg_color) ; */
+  display: block;
+  position: fixed;
+  width: 70%;
+  z-index: 2;
+  padding: 2rem;
+  height: 100vh;
+}
+.mobile_side_bar_container .mobile_bar_links div:hover{
+  background-color: var(--link_hover_bg_color);
+}
+/* HEADER STYLING BEGINS */
+.header_input_container{
+  position: relative;
+}
+.header_input_container input{ 
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  margin-right: 0.5rem;
+}
+.header_input_container span img{
+  position: absolute;
+  top: 0.8rem;
+  left: 1rem;
+}
+.bell_icon_container{
+  background-color: var(--primary_bg_color);
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  margin-right: 0.5rem;
+}
+/* HEADER STYLING ENDS */
+
+.side_bar_container{
+  display: none;
+}
+.side_bar_container .side_bar_links div:hover{
+background-color: var(--link_hover_bg_color);
+}
+.logo_container{
+  width: 120px;
+  height: 120px;
+}
+.logo_container img{
+  width: 100%;
+}
+/* MAINBAR STYLING BEGINS MOBILE */
+.main_bar_container{
+  background-color: #E5E7F1;
+  padding: 2rem;
+}
+/* MAINBAR STYLING ENDS MOBILE */
+
+/* FORM PAGE STYLING */
+.form_page main{
+  background-color: var(--blue_bg_color);
+  padding: 2rem 4rem;
+}
+.form_page aside{
+  background-color: var(--primary_bg_color);
+  padding: 3rem 7rem;
+}
+.form_container header{
+  margin-bottom: 3rem;
+}
+.form_container header ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.form_container header li{
+  cursor: pointer;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.form_container header::after{
+  content: "";
+  border-bottom: 1px solid var(--primary_text_color);
+  display: block;
+}
+/* SIGN UP FORM STYLING */
+.form_group{
+  margin-bottom: 1rem;
+}
+.form_group label{
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.form_group input{
+  border-radius: 5px;
+  border: 2px solid var(--input_color);
+  padding: 0.7rem;
+  width: 100%;
+}
+.form_group input::placeholder{
+  margin-left: 1rem;
+}
+.sign_up_in_btn{
+  background-color: var(--primary_blue_color);
+  border-radius: 5px;
+  display: block;
+  color: var(--primary_bg_color);
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.7rem;
+  width: 100%;
+  margin: 3rem 0 1rem;
+}
+@media(min-width: 764px){
+  .burger{
+    display: none;
+  }
+  .side_bar_container{
+    display: block;
+    position: fixed;
+  }
+  .mobile_side_bar_container{
+    display: none;
+  }
+  /* FORM PAGE STYLING */
+  .form_page{
+    display: flex;
+  }
+  .form_page main{
+    padding: 2rem 4rem;
+    width: 55%;
+  }
+  .form_page aside{
+    padding: 3rem 5rem;
+    width: 45%;
+  }
+  /* SIGN UP FORM STYLING */
+  .signUpIn_Img_container{
+    display: grid;
+    place-items: center;
+    margin-top: -8rem;
+  } 
+  /* MAINBAR CONTAINER STYLING BEGINS */
+ .main_bar_container{
+  border-radius: 0.8rem;
+  padding: 2rem 3rem;
+}
+.main_bar_container article{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.mainbar_top_row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
+}
+.mainbar_second_row, .mainbar_third_row{
+  margin-top: 4rem;
+}
+.main_bar_container_right{
+  margin-top: 3rem;
+} 
+/* MAINBAR CONTAINER STYLING ENDS */
 }

@@ -1,0 +1,33 @@
+.training_main_bar_container{
+    background-color: #E5E7F1;
+    border-radius: 0.8rem;
+    padding: 2rem 3rem;
+}
+.training_card_container{
+    background-color: var(--primary_bg_color);
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+}
+.open_course_btn{
+    background-color: var(--primary_blue_color);
+    background-color:#3C4989;
+    color: var(--primary_bg_color);
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+}
+.training_hover_comp{
+    background-color: var(--primary_bg_color);
+    max-width: 300px;
+    border-radius: 15px;
+}
+@media(min-width: 764px){
+.trainingImg img{
+width: 300px;
+}
+.open_course_btn{
+font-weight: 500;
+padding: 0.5rem 1rem;
+margin-top: 1rem;
+}
+}

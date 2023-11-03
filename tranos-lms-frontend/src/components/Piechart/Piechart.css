@@ -1,0 +1,6 @@
+.my_pie_chart{
+    background: conic-gradient(#172673 80%, #929dd3 80% 20%);
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}

@@ -1,0 +1,50 @@
+.user_setting_form{
+    background-color: var(--primary_bg_color);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.user_setting_container{
+    background-color: #E5E7F1;
+    border-radius: 0.8rem;
+    padding: 2rem 3rem;
+}
+.user_setting_form_group{
+    display: flex;
+    width: 100%;
+}
+.user_setting_form_group label{
+    display: block;
+}
+.user_setting_form_group input{
+    background-color: #E5E7F1;
+    border-radius: 10px;
+    padding: 0.5rem;
+    /* width: calc(100%-3px); */
+}
+.user_profile_pic_container{
+    background-color: var(--primary_bg_color);
+    width: 200px;
+    padding: 0.7rem;
+    margin-top: 3.5rem;
+    /* margin-left: rem; */
+}
+.user_profile_pic_container img{
+    width: 100%;
+}
+.user_profile_pic_btn{
+    background-color: #3C4989;
+    border-radius: 5px;
+    color: var(--primary_bg_color);
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
+}
+.user_setting_btn_container{
+    margin-top: 2rem;
+}
+.user_setting_btn_container button{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+}
